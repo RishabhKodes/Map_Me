@@ -1,5 +1,3 @@
-  # A very simple Flask Hello World app for you to get started with...
-
   from flask import Flask, request, redirect
   #from flask_cors import CORS
   from twilio.twiml.messaging_response import MessagingResponse
@@ -14,7 +12,7 @@
   # MY_KEY="/*ENTER YOUR GOOGLE API KEY*/"
 
   gmaps = googlemaps.Client(key="MY_KEY")
-  geolocator = Nominatim(user_agent="sudowin")
+  geolocator = Nominatim(user_agent="GCP PROJECT NAME")
 
   # URL = "https://maps.googleapis.com/maps/api/distancematrix/json"
 
@@ -103,7 +101,7 @@
 
   def getStart(starting):
 
-    geolocator = Nominatim(user_agent="sudowin")
+    geolocator = Nominatim(user_agent="GCP PROJECT NAME")
     location = geolocator.geocode(starting)
     coord01 = location.latitude
     coord02 = location.longitude
@@ -116,7 +114,7 @@
   def getDest(dest):
 
 
-      geolocator = Nominatim(user_agent="sudowin")
+      geolocator = Nominatim(user_agent="GCP PROJECT NAME")
       location = geolocator.geocode(dest)
       coord03 = location.latitude
       coord04 = location.longitude
