@@ -5,7 +5,7 @@
 MapMe is a textual-based navigation service that gives directions on your phone without using the internet. This service doesn’t require the users
 to have a smartphone.
 
-The backend service of the project mainly uses Google Maps API and Twilio API.
+The backend service of the project mainly uses Flask, Google Maps API and Twilio API.
 
 <!-- GETTING STARTED -->
 ## Getting Started
