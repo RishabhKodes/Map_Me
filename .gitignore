@@ -1,0 +1,15 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Distribution / packaging
+/dist/
+/build/
+
+# Virtual environments
+venv/
+env/
+
+# Local development settings
+.local/
+
+directions.py
